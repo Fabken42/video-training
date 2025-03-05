@@ -1,0 +1,44 @@
+/* Aplica ao container do formulário de autenticação */
+.auth-container {
+    background-color: #556 !important; /* Fundo do formulário */
+    color: #eee !important; /* Cor do texto */
+    padding: 30px;
+    border-radius: 20px !important;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estiliza os labels para melhor contraste */
+.auth-container .form-label {
+    font-size: 1.2em;
+    color: #eee;
+}
+
+/* Botão "Entrar" */
+.auth-container .btn-entrar {
+    background-color: #007bff;
+    border: none;
+    font-size: 1.1em;
+}
+
+.auth-container .btn-entrar:hover {
+    background-color: #0056b3;
+}
+
+/* Botão "Continuar com Google" */
+.auth-container .btn-google {
+    background-color: #dd5555;
+    border: none;
+    font-size: 1.1em;
+}
+
+.auth-container .btn-google:hover {
+    background-color:rgb(202, 59, 59);
+}
+
+/* Ajusta o link de "Registrar" */
+.auth-container a {
+    color: #66b3ff;
+    font-size:1.1em;
+    font-weight: bold;
+}
+

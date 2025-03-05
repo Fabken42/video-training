@@ -1,0 +1,140 @@
+.profile-card {
+    background-color: #556;
+    color: #eee;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.profile-header {
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.player-name{
+    font-weight: bold;
+}
+
+.profile-info {
+    margin-top: 20px;
+}
+
+.rankings {
+    display: flex;
+    justify-content: center;
+    gap: 18px !important;
+    margin-top: 10px;
+}
+
+.ranking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ranking-circle {
+    width: 40px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #556;
+    border-radius: 50%;
+}
+
+.ranking-number {
+    margin-top: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.ranking-d .ranking-circle {
+    background: #ff2c2c;
+}
+
+.ranking-c .ranking-circle {
+    background: #ff8308;
+}
+
+.ranking-b .ranking-circle {
+    background: #e7e70c;
+}
+
+.ranking-a .ranking-circle {
+    background: #13ff17;
+}
+
+.ranking-s .ranking-circle {
+    background: #1bffff;
+}
+
+.no-rankings {
+    color: #888;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.profile-buttons {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px !important;
+    margin-top: 20px !important;
+}
+
+.edit-profile-btn {
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    border-radius: 50px;
+    background-color: #5599dd;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.edit-profile-btn:hover {
+    background-color:rgb(43, 118, 194);
+}
+
+.logout-btn {
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    border-radius: 50px;
+    background-color: #dd5555;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.logout-btn:hover {
+    background-color:rgb(202, 59, 59);
+}

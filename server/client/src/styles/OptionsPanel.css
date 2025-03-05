@@ -1,0 +1,75 @@
+/* Botão padrão */
+.option-button {
+  width: 160px;
+  height: 50px;
+  margin: 8px;
+  padding: 10px 15px;
+  font-size: 1.1em !important;
+  text-align: center;
+  transition: all 0.3s ease;
+  color: #eee !important;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Botão correto */
+.option-button.correct {
+  background-color: #28a745 !important; /* Verde */
+  pointer-events: none;
+}
+
+/* Botão incorreto */
+.option-button.incorrect {
+  background-color: #dc3545 !important; /* Vermelho */
+}
+
+/* Remove o estilo após 300ms */
+.option-button.default {
+  background-color: #334;
+}
+
+/* Efeito hover para o estado padrão */
+.option-button.default:hover {
+  background-color: #445;
+}
+
+/* Botão desabilitado */
+.btn-disabled {
+  background-color: #667 !important;
+}
+
+/* Animação de erro (shake) */
+.option-button.shake {
+  animation: shake-animation 0.3s;
+}
+
+@keyframes shake-animation {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+/* Layout responsivo */
+@media (min-width: 768px) {
+  .options-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .options-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}

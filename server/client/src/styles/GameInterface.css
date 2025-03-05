@@ -1,0 +1,33 @@
+.game-interface {
+    margin-top: 10px;
+    text-align: center;
+    background-color: #334;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.game-interface p {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #eee;
+}
+
+.captions {
+    font-size: 1.1em;
+    text-align: center;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+.captions .fa-circle {
+    color: #0080ff;
+    font-size: 1.2em;
+    margin: 0 7px !important;
+}
+
+.options-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,16 @@
+.score-text{
+  color: #eee;
+  font-size: 1.2em;
+}
+
+.options-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.captions {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: left;
+}

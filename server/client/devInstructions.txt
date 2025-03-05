@@ -1,0 +1,107 @@
+ADD TOASTIFY
+COMPETIÇÃO DECORRENTE DE: PLACAR DE LíDER NA FASE & RANKING GLOBAL (com base em performance points: pp)
+DEFINIR LOGICA DE PP TOTAL E DA FASE
+
+1. Recomendações gerais
+Desenvolvimento incremental:
+Construa o sistema em pequenos módulos testáveis e funcionais.
+Teste cada módulo antes de adicionar outro para evitar bugs acumulados.
+Escolha de tecnologia:
+Frontend: React.js ou Vue.js para uma interface dinâmica.
+Backend: Node.js com Express, ou Django para Python.
+Banco de dados: PostgreSQL (para escalabilidade e suporte a operações complexas).
+API para vídeos:
+Use a API do YouTube para buscar vídeos e verificar se possuem legendas.
+Use a Youglish API como alternativa para buscas contextuais.
+Autenticação:
+Implemente autenticação segura com JWT ou OAuth 2.0.
+Sistema de pontuação:
+Inspire-se no OSU, mas mantenha simplicidade no início. Por exemplo:
+Baseie a pontuação em dificuldade, tempo de resposta e precisão.
+
+********************************************************
+
+2. Funcionalidades e ordem de implementação
+
+Fase 1: MVP básico (Minimum Viable Product)
+Autenticação de usuários (Registro e Login):
+
+Função de registro com e-mail e senha.
+Login e logout.
+Proteção de rotas para usuários autenticados.
+
+Buscar e selecionar vídeos (Usuário pode):
+Inserir a URL do vídeo manualmente.
+Buscar vídeos por palavras-chave (usando a API do YouTube ou Youglish).
+Exibição do vídeo com legendas:
+
+Mostrar vídeo integrado com o player do YouTube.
+Carregar legendas automaticamente (via API do YouTube).
+Sistema básico de completar legendas:
+
+Identificar palavras ocultas com base na dificuldade selecionada.
+Usuário digita as palavras durante o vídeo.
+Feedback imediato (correto/errado) durante o jogo.
+Fase 2: Funcionalidades de jogo
+Níveis de dificuldade:
+
+Fácil (25%), Médio (50%), Difícil (75%) e Expert (100%).
+O número de palavras ocultas varia com base no nível escolhido.
+Sistema de pontuação básico:
+
+A pontuação depende de:
+Número de palavras corretas.
+Precisão.
+Dificuldade escolhida.
+Tempo de resposta.
+Tabela de classificação (Ranking global):
+
+Crie um ranking geral mostrando os 10 melhores jogadores.
+Exiba o nome do jogador, pontuação total e ranking.
+Fase 3: Recursos avançados
+Perfil do jogador:
+
+Mostrar estatísticas:
+Número total de vídeos jogados.
+Percentual de acertos por dificuldade.
+Histórico de pontuação.
+Sistema de performance points (PP):
+
+Adicione um sistema inspirado no OSU:
+O PP aumenta exponencialmente com base na dificuldade.
+Leve em consideração a precisão em cada vídeo.
+Busca personalizada por idioma:
+
+Filtrar vídeos por idioma das legendas.
+Suporte a salas multiplayer (Futuro):
+
+Competição em tempo real entre jogadores.
+3. Ordem de Implementação
+Etapa 1: Infraestrutura
+Configure o projeto:
+
+Estruture o repositório.
+Escolha a stack e configure as dependências (backend, frontend e banco de dados).
+Configure autenticação:
+
+Registro, login e gerenciamento de sessões.
+Integre o player de vídeo:
+
+Use a API do YouTube para exibir vídeos e carregar legendas.
+Etapa 2: Mecânica do jogo
+Desenvolva a lógica para ocultar palavras nas legendas.
+Implemente os níveis de dificuldade.
+Adicione validação de respostas e cálculo de pontuação.
+Etapa 3: Funcionalidades avançadas
+Construa a tabela de classificação.
+Configure o perfil do jogador com estatísticas.
+Crie o sistema de PP e ajuste o ranking global.
+Etapa 4: Polimento
+Teste extensivamente o sistema para corrigir bugs.
+Otimize a interface para uma experiência de usuário intuitiva.
+Documente o código e crie um guia para futuros colaboradores.
+Ferramentas recomendadas
+Frontend: TailwindCSS (para design simples e rápido).
+Backend: NestJS (estrutura organizada e modular).
+Banco de dados: Prisma (ORM para facilitar a interação com o banco).
+Teste de software: Jest ou Cypress (testes unitários e end-to-end).

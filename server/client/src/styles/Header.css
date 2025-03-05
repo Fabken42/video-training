@@ -1,0 +1,47 @@
+.header-light {
+    background: linear-gradient(to bottom, rgb(230, 230, 255), rgb(190, 190, 215));
+    /* 🔥 Gradiente suave */
+    box-shadow: 0px 6px 12px rgba(0, 0, 50, 0.3);
+    /* 🔥 Mais visível */
+    padding: 10px 0;
+}
+
+.site-title-light {
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.title-gradient {
+    background: linear-gradient(45deg, #66b3ff, #0044cc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 15px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+.nav-link-light {
+    color: #112;
+    font-size: 1.2em;
+    margin-left: 15px;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-link-light:hover {
+    color: #334;
+}
+
+.placar-lideres-link{
+    display: flex;
+    align-items: center;
+}

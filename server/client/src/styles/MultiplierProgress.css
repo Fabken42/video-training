@@ -1,0 +1,47 @@
+.multiplier-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.multiplier-circle {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border: 1px solid #d6d6d6;
+    border-radius: 50%;
+    background: conic-gradient(
+        #4caf50 0% 0%, /* Sem preenchimento inicial */
+        #eee 0% 100%  /* Cinza para não preenchido */
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.multiplier-circle.filled-1 { background: conic-gradient(#4caf50 0% 12.5%, #eee 12.5% 100%); }
+.multiplier-circle.filled-2 { background: conic-gradient(#4caf50 0% 25%, #eee 25% 100%); }
+.multiplier-circle.filled-3 { background: conic-gradient(#4caf50 0% 37.5%, #eee 37.5% 100%); }
+.multiplier-circle.filled-4 { background: conic-gradient(#4caf50 0% 50%, #eee 50% 100%); }
+.multiplier-circle.filled-5 { background: conic-gradient(#4caf50 0% 62.5%, #eee 62.5% 100%); }
+.multiplier-circle.filled-6 { background: conic-gradient(#4caf50 0% 75%, #eee 75% 100%); }
+.multiplier-circle.filled-7 { background: conic-gradient(#4caf50 0% 87.5%, #eee 87.5% 100%); }
+.multiplier-circle.filled-8 { background: conic-gradient(#4caf50 0% 100%, #eee 100% 100%); }
+
+.multiplier-text {
+    position: absolute;
+    width: 60px; /* Mantém um círculo perfeito */
+    height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    border: 1px solid #d6d6d6;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; /* Garante que o texto fica acima */
+}

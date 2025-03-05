@@ -1,0 +1,98 @@
+.leaderboard-table {
+    background-color: #334 !important;
+    color: #ddd !important;
+    font-size: 1.1em;
+    border-radius: 12px;
+    overflow: hidden;
+    border-collapse: separate !important;
+    /* 🔥 Garante que as bordas arredondadas funcionem */
+}
+
+/* 🔥 Remove os estilos padrão do Bootstrap */
+.leaderboard-table.table {
+    --bs-table-bg: transparent !important;
+    /* Remove fundo branco do Bootstrap */
+    --bs-table-color: #ddd !important;
+    /* Garante que a cor do texto seja branca */
+    --bs-table-border-color: #556 !important;
+    /* Ajusta bordas */
+}
+
+.leaderboard-table thead {
+    background-color: #445 !important;
+    color: #fff !important;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #556 !important;
+    /* 🔥 Ajusta bordas para não ficarem brancas */
+}
+
+.leaderboard-table tbody tr:hover {
+    background-color: #445 !important;
+    transition: all ease-in-out 0.2s;
+}
+
+.leaderboard-table .clickable-player {
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.leaderboard-table .clickable-player img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.leaderboard-table .clickable-player:hover {
+    color: #66b3ff !important;
+    text-decoration: underline;
+}
+
+.placar-lideres-titulo {
+    color: #eee;
+    font-size: 2.1em;
+}
+
+.form-select {
+    font-size: 1.1em;
+    background-color: #334 !important;
+    color: #ddd !important;
+    border: 1px solid #556 !important;
+    cursor: pointer;
+}
+
+/* 🔥 Garante que a tabela mantenha o layout correto */
+.leaderboard-table tbody tr:last-child {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    overflow: hidden;
+}
+
+/* 🔥 Ajusta espaçamento e alinhamento das colunas */
+.leaderboard-table td, 
+.leaderboard-table th {
+    padding: 12px;
+    vertical-align: middle; /* Garante que imagens e texto fiquem alinhados */
+}
+
+/* 🔥 Ajusta o tamanho das imagens */
+.leaderboard-table .clickable-player img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+/* 🔥 Garante alinhamento correto ao lado do nome */
+.leaderboard-table .clickable-player {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

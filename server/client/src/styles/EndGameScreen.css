@@ -1,0 +1,65 @@
+.end-game-screen {
+    color: #eee;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 120px;
+    padding: 30px;
+    border-radius: 20px !important; /* Cantos arredondados */
+    background-color: #445;
+    border: none; /* Borda na cor #445 */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Efeito de sombra */
+}
+
+.game-over-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.game-score,
+.game-precision,
+.game-ranking {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn-restart {
+    background-color: #419744 !important; /* Verde */
+    border: none;
+    color: white;
+}
+
+.btn-leaderboard {
+    background-color: #0071e2 !important; /* Azul */
+    border: none;
+    color: white;
+}
+
+.btn-exit {
+    background-color: #c22d3c !important; /* Vermelho */
+    border: none;
+    color: white;
+}
+
+.btn-restart:hover,
+.btn-leaderboard:hover,
+.btn-exit:hover {
+    filter: brightness(1.1);
+}
+
+.register-link {
+    color: #2d96ff;
+    font-weight: bold;
+}
+
+.register-link:hover {
+    color: #2c7ecf;
+}

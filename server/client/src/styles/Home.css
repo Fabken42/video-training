@@ -1,0 +1,153 @@
+.home-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.advanced-options-btn {
+  background-color: #556 !important;
+  /* 🔥 Tom escuro suave */
+  color: #ddd !important;
+  /* 🔥 Texto claro */
+  font-size: 1.1em !important;
+  /* 🔥 Aumenta a fonte */
+  border: none;
+  padding: 12px 20px !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.advanced-options-btn:hover {
+  background-color: #667;
+  /* 🔥 Um tom mais claro no hover */
+  transform: scale(1.05);
+}
+
+/* Estiliza apenas o modal de Opções Avançadas */
+.advanced-options-modal .modal-content {
+  background-color: #445 !important; /* Define o fundo escuro */
+  color: #ddd !important; /* Altera a cor da fonte */
+  border: none;
+}
+
+/* Ajusta o cabeçalho para combinar com o fundo */
+.advanced-options-modal .modal-header {
+  background-color: #445;
+  color: #ddd;
+  border-bottom: 1px solid #556;
+}
+
+/* Estiliza os botões */
+.advanced-options-modal .modal-footer .btn {
+  font-size: 1rem; /* Ajusta o tamanho do texto */
+  padding: 10px 20px; /* Ajusta o tamanho do botão */
+  border-radius: 50px; /* Deixa os botões arredondados (pill) */
+}
+
+/* Ajusta a cor do botão "Fechar" */
+.advanced-options-modal .modal-footer .btn-secondary {
+  background-color: #445;
+  border: none;
+}
+
+/* Ajusta a cor do botão "Aplicar" */
+.advanced-options-modal .modal-footer .btn-primary {
+  background-color:rgb(50, 141, 233);
+  border: none;
+}
+
+/* Ajusta o botão de fechar no canto superior */
+.advanced-options-modal .btn-close {
+  filter: invert(1); /* Torna o ícone visível em fundo escuro */
+}
+
+.video-card {
+  background-color: #334;
+  color: #ddd;
+  border-radius: 24px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.video-card:hover {
+  background-color: #445;
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.video-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.video-card .card-title {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #ddd;
+  flex-grow: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* Limitar o título a no máximo 2 linhas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 2.5em;
+}
+
+.card-content {
+  font-size: 1.1em;
+}
+
+.ranking-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: gold;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.ranking-icon:hover {
+  transform: scale(1.2);
+}
+
+.no-videos {
+  color: rgb(186, 186, 207);
+  font-weight: bold;
+  font-style: italic;
+}
+
+.custom-slider {
+  width: 100%;
+  height: 8px;
+  background: #ddd;
+  border-radius: 4px;
+  position: relative;
+}
+
+.custom-track {
+  background: #ddd;
+  /* Parte fora do intervalo selecionado */
+  height: 100%;
+  border-radius: 4px;
+}
+
+.custom-track-active {
+  background: #007bff;
+  /* Cor da região entre os valores selecionados */
+  height: 100%;
+  border-radius: 4px;
+}
+
+.custom-thumb {
+  width: 20px;
+  height: 20px;
+  background: #007bff;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: -6px;
+}

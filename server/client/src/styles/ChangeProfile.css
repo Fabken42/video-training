@@ -1,0 +1,99 @@
+/* Container principal */
+.change-profile-container {
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    background-color: #556;
+    color: #eee;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+
+}
+
+.profile-image-preview {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.profile-image-preview:hover {
+    transform: scale(1.1);
+}
+
+.container--margem-cima{
+    margin-top: 100px;
+}
+
+.titulo--fonte{
+    font-size: 2.1em;
+    font-weight: bold;
+}
+.texto--fonte{
+    font-size: 1.1em;
+}
+
+.text-start {
+    text-align: left !important;
+}
+
+.hidden-input {
+    display: none;
+}
+
+.profile-image-container label {
+    cursor: pointer;
+    display: block;
+    width: fit-content;
+    margin: auto;
+}
+
+.custom-file-upload {
+    display: none;
+}
+
+.back-btn{
+    background-color: #334;
+    padding: 12px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.back-btn:hover{
+    background-color: rgb(62, 62, 78);
+}
+
+/* Botão Salvar */
+.save-btn {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 12px;
+    border-radius: 50px;
+    background-color: #43a047;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.save-btn:hover {
+    background-color: #2d8d32;
+}
+
+/* Botão Deletar Conta */
+.delete-btn {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 12px;
+    border-radius: 50px;
+    background-color: #dd5555;
+
+    border: none;
+    margin-top: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.delete-btn:hover {
+    background-color:rgb(202, 59, 59);
+}

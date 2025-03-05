@@ -1,0 +1,39 @@
+@import './Header.css';
+@import './Home.css';
+@import './Leaderboard.css';
+@import './LeaderboardModal.css';
+@import './MultiplierProgress.css';
+@import './OptionsPanel.css';
+@import './PlayVideo.css';
+@import './Profile.css';
+@import './ChangeProfile.css';
+@import './VideoPlayer.css';
+@import './AuthContainer.css';
+@import './Register.css';
+@import './GameInterface.css';
+@import './EndGameScreen.css';
+@import './YouglishSearch.css';
+@import './Footer.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Estilos globais */
+body {
+  background-color: #223;
+  /* 🔥 Define o fundo escuro */
+  min-height: 100vh;
+  /* Garante que o fundo cubra toda a tela */
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  /* Define uma fonte legível */
+}
+
+a {
+  color: #66b3ff;
+  /* Links azul-claro para contraste */
+}
+
+a:hover {
+  color: #99ccff;
+  /* Links ficam mais claros ao passar o mouse */
+}
+
