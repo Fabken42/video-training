@@ -22,15 +22,15 @@ export const generateMissingWords = (captions, percentage) => {
   const missingWords = [];
 
   updatedCaptions.forEach((caption, captionIndex) => {
-    // Divide a legenda em palavras, mantendo pontuações
-    // const words = caption.text.match(/[\wÀ-ÿ]+|[.,!?;:]/g) || [];
-    const words = caption.text.match(/[\wÀ-ÿ]+(?:'[\wÀ-ÿ]+)?|[.,!?;:]/g) || [];
+    const words = caption.text.match(/[\wÀ-ÿ]+(?:’[\wÀ-ÿ]+)?|[\wÀ-ÿ]+(?:'[\wÀ-ÿ]+)?|[.,!?;:]/g
+    ) || [];
+
     const numMissingWords = Math.ceil(words.length * percentage);
 
     let missingIndexes = [];
     while (missingIndexes.length < numMissingWords) {
       const randomIndex = Math.floor(Math.random() * words.length);
-      
+
       // Evita substituir pontuações ou palavras já removidas
       if (!missingIndexes.includes(randomIndex) && /\w/.test(words[randomIndex])) {
         missingIndexes.push(randomIndex);

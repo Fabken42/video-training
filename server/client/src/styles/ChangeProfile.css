@@ -11,6 +11,14 @@
 
 }
 
+.change-profile-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Garante que ele preencha o espaço sem forçar o .change-profile-container a crescer */
+    width: 100%;
+}
+
 .profile-image-preview {
     width: 120px;
     height: 120px;

@@ -90,62 +90,124 @@ const ChangeProfile = () => {
     }
   };
 
+  // return (
+  //   <div className="change-profile-container container--margem-cima">
+  //     <button className="btn btn-secondary back-btn rounded-pill mb-3 texto--fonte w-100" onClick={() => window.history.back()}>
+  //       Voltar
+  //     </button>
+  //     <form className="profile-form" onSubmit={handleSubmit}>
+  //       <h2 className="text-center titulo--fonte">Editar Perfil</h2>
+
+  //       <div className="profile-image-container">
+  //         {/* Agora a imagem funciona como botão para selecionar uma nova foto */}
+  //         <label htmlFor="photo-upload">
+  //           <img src={preview} alt="Foto de perfil" className="my-3 profile-image-preview" />
+  //         </label>
+  //         <input
+  //           type="file"
+  //           id="photo-upload"
+  //           accept="image/*"
+  //           onChange={handlePhotoChange}
+  //           className="hidden-input"
+  //         />
+  //       </div>
+
+  //       <div className="mb-3">
+  //         <label className="texto--fonte text-start d-block mb-1">Nome (3-50 caracteres):</label>
+  //         <input
+  //           type="text"
+  //           className="form-control rounded-pill"
+  //           value={name}
+  //           onChange={(e) => setName(e.target.value)}
+  //           minLength="3"
+  //           maxLength="50"
+  //         />
+  //       </div>
+
+  //       <div className="mb-3">
+  //         <label className="texto--fonte text-start d-block mb-1">Descrição (0-100 caracteres):</label>
+  //         <input
+  //           type="text"
+  //           className="form-control rounded-pill"
+  //           value={description}
+  //           onChange={(e) => setDescription(e.target.value)}
+  //           maxLength="100"
+  //         />
+  //       </div>
+
+  //       <button type="submit" className="btn btn-success save-btn texto--fonte my-2">
+  //         {loadingSubmit ? "Carregando..." : "💾 Salvar Alterações"}
+  //       </button>
+  //     </form>
+
+  //     <button onClick={handleDeleteAccount} className="btn btn-danger delete-btn texto--fonte">
+  //       ❌ Deletar Conta
+  //     </button>
+  //   </div>
+  // );
   return (
-    <div className="change-profile-container container--margem-cima">
-      <button className="btn btn-secondary back-btn rounded-pill mb-3 texto--fonte w-100" onClick={() => window.history.back()}>
-        Voltar
-      </button>
-      <form className="profile-form" onSubmit={handleSubmit}>
-        <h2 className="text-center titulo--fonte">Editar Perfil</h2>
-
-        <div className="profile-image-container">
-          {/* Agora a imagem funciona como botão para selecionar uma nova foto */}
-          <label htmlFor="photo-upload">
-            <img src={preview} alt="Foto de perfil" className="my-3 profile-image-preview" />
-          </label>
-          <input
-            type="file"
-            id="photo-upload"
-            accept="image/*"
-            onChange={handlePhotoChange}
-            className="hidden-input"
-          />
+    <div className="d-flex flex-column min-vh-100 justify-content-center align-items-center" fluid>
+      <div className="change-profile-wrapper d-flex flex-column align-items-center">
+        <div className="change-profile-container">
+          <button
+            className="btn btn-secondary back-btn rounded-pill mb-3 texto--fonte w-100"
+            onClick={() => window.history.back()}
+          >
+            Voltar
+          </button>
+  
+          <form className="profile-form" onSubmit={handleSubmit}>
+            <h2 className="text-center titulo--fonte">Editar Perfil</h2>
+  
+            <div className="profile-image-container">
+              <label htmlFor="photo-upload">
+                <img src={preview} alt="Foto de perfil" className="my-3 profile-image-preview" />
+              </label>
+              <input
+                type="file"
+                id="photo-upload"
+                accept="image/*"
+                onChange={handlePhotoChange}
+                className="hidden-input"
+              />
+            </div>
+  
+            <div className="mb-3">
+              <label className="texto--fonte text-start d-block mb-1">Nome (3-50 caracteres):</label>
+              <input
+                type="text"
+                className="form-control rounded-pill"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                minLength="3"
+                maxLength="50"
+              />
+            </div>
+  
+            <div className="mb-3">
+              <label className="texto--fonte text-start d-block mb-1">Descrição (0-100 caracteres):</label>
+              <input
+                type="text"
+                className="form-control rounded-pill"
+                value={description}
+                onChange={(e) => setDescription(e.target.value)}
+                maxLength="100"
+              />
+            </div>
+  
+            <button type="submit" className="btn btn-success save-btn texto--fonte my-2">
+              {loadingSubmit ? "Carregando..." : "💾 Salvar Alterações"}
+            </button>
+          </form>
+  
+          <button onClick={handleDeleteAccount} className="btn btn-danger delete-btn texto--fonte">
+            ❌ Deletar Conta
+          </button>
         </div>
-
-        <div className="mb-3">
-          <label className="texto--fonte text-start d-block mb-1">Nome (3-50 caracteres):</label>
-          <input
-            type="text"
-            className="form-control rounded-pill"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            minLength="3"
-            maxLength="50"
-          />
-        </div>
-
-        <div className="mb-3">
-          <label className="texto--fonte text-start d-block mb-1">Descrição (0-100 caracteres):</label>
-          <input
-            type="text"
-            className="form-control rounded-pill"
-            value={description}
-            onChange={(e) => setDescription(e.target.value)}
-            maxLength="100"
-          />
-        </div>
-
-        <button type="submit" className="btn btn-success save-btn texto--fonte my-2">
-          {loadingSubmit ? "Carregando..." : "💾 Salvar Alterações"}
-        </button>
-      </form>
-
-      <button onClick={handleDeleteAccount} className="btn btn-danger delete-btn texto--fonte">
-        ❌ Deletar Conta
-      </button>
+      </div>
     </div>
   );
-
+  
 };
 
 export default ChangeProfile;
